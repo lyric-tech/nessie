@@ -39,11 +39,6 @@ jobs:
           echo "Custom module found:"
           find servers/quarkus-server/build/quarkus-app -name "*custom*"
 
-      - name: Login via Azure CLI
-        uses: azure/login@v1
-        with:
-          creds: ${{ secrets.AZURE_SP_CREDENTIALS }}
-
       - name: Login to Azure Container Registry
         uses: docker/login-action@v3
         with:

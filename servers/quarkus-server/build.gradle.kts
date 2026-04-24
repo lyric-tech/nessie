@@ -53,6 +53,7 @@ dependencies {
   implementation(project(":nessie-quarkus-secrets"))
   implementation(project(":nessie-quarkus-rest"))
   implementation(project(":nessie-events-quarkus"))
+  implementation(project(":nessie-events-custom-kafka-json"))
   implementation(project(":nessie-rest-common"))
   implementation(project(":nessie-rest-services"))
   implementation(project(":nessie-versioned-spi"))
